@@ -1,0 +1,12 @@
+C:\Users\ramon\OneDrive\Documents\Task Generator\bin\Debug\Task Generator.exe.config
+C:\Users\ramon\OneDrive\Documents\Task Generator\bin\Debug\Task Generator.exe
+C:\Users\ramon\OneDrive\Documents\Task Generator\bin\Debug\Task Generator.pdb
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task Generator.csproj.AssemblyReference.cache
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task_Generator.Form1.resources
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task_Generator.Properties.Resources.resources
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task Generator.csproj.GenerateResource.cache
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task Generator.csproj.CoreCompileInputs.cache
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task Generator.exe
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task Generator.pdb
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Debug\Task Generator.csproj.ResolveComReference.cache

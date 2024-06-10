@@ -1,0 +1,10 @@
+C:\Users\ramon\OneDrive\Documents\Task Generator\bin\Release\Task Generator.exe.config
+C:\Users\ramon\OneDrive\Documents\Task Generator\bin\Release\Task Generator.exe
+C:\Users\ramon\OneDrive\Documents\Task Generator\bin\Release\Task Generator.pdb
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task Generator.csproj.AssemblyReference.cache
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task_Generator.Form1.resources
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task_Generator.Properties.Resources.resources
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task Generator.csproj.GenerateResource.cache
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task Generator.csproj.CoreCompileInputs.cache
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task Generator.exe
+C:\Users\ramon\OneDrive\Documents\Task Generator\obj\Release\Task Generator.pdb
