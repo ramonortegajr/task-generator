@@ -56,7 +56,7 @@ namespace Task_Generator
             Console.WriteLine($"Current Philippine Time: {philippineTime}");
 
             // Check if it's 5:30 PM Philippine time
-            if (philippineTime.Hour == 18 && philippineTime.Minute == 17)
+            if (philippineTime.Hour == 17 && philippineTime.Minute == 27)
             {
                 Console.WriteLine("It's 5:30 PM Philippine Time");
                 this.Show();
@@ -64,7 +64,7 @@ namespace Task_Generator
                 this.BringToFront();
 
                 // Check if it's Friday, then save the week's tasks to the file
-                if (philippineTime.DayOfWeek == DayOfWeek.Friday)
+                if (philippineTime.DayOfWeek == DayOfWeek.Monday)
                 {
                     SaveWeeklyTasks();
                 }
