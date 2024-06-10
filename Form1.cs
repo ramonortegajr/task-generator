@@ -56,20 +56,53 @@ namespace Task_Generator
             Console.WriteLine($"Current Philippine Time: {philippineTime}");
 
             // Check if it's 5:30 PM Philippine time
-            if (philippineTime.Hour == 17 && philippineTime.Minute == 27)
+            if (philippineTime.Hour == 17 && philippineTime.Minute == 58)
             {
                 Console.WriteLine("It's 5:30 PM Philippine Time");
+
+                // Show the form
                 this.Show();
                 this.WindowState = FormWindowState.Normal;
                 this.BringToFront();
 
-                // Check if it's Friday, then save the week's tasks to the file
-                if (philippineTime.DayOfWeek == DayOfWeek.Monday)
-                {
-                    SaveWeeklyTasks();
-                }
+                // Save the tasks
+                SaveWeeklyTasks();
             }
         }
+
+ 
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+
+            string task = taskTextBox.Text.Trim();
+
+            if (!string.IsNullOrWhiteSpace(task))
+            {
+                try
+                {
+                    // Capitalize the first letter and add an asterisk
+                    string formattedTask = "* " + char.ToUpper(task[0]) + task.Substring(1);
+                    tasks[DateTime.Now.DayOfWeek].Add(formattedTask);
+
+                    taskTextBox.Text = string.Empty;
+                    MessageBox.Show("Task saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.WindowState = FormWindowState.Minimized;
+                    this.ShowInTaskbar = false;
+
+                    // Save tasks immediately after submission
+                    SaveWeeklyTasks();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while saving the task: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a task.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
         // Save weekly tasks
         private void SaveWeeklyTasks()
@@ -105,34 +138,6 @@ namespace Task_Generator
             foreach (var day in tasks.Keys.ToList())
             {
                 tasks[day].Clear();
-            }
-        }
-
-        private void submitButton_Click(object sender, EventArgs e)
-        {
-            string task = taskTextBox.Text.Trim();
-
-            if (!string.IsNullOrWhiteSpace(task))
-            {
-                try
-                {
-                    // Capitalize the first letter and add an asterisk
-                    string formattedTask = "* " + char.ToUpper(task[0]) + task.Substring(1);
-                    tasks[DateTime.Now.DayOfWeek].Add(formattedTask);
-
-                    taskTextBox.Text = string.Empty;
-                    MessageBox.Show("Task saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.WindowState = FormWindowState.Minimized;
-                    this.ShowInTaskbar = false;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"An error occurred while saving the task: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter a task.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
